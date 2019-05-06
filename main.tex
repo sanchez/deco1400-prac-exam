@@ -74,7 +74,7 @@
 \begin{document}
 	\pagestyle{fancy}
 	\pagenumbering{arabic}
-	\begin{multicols*}{2}
+	\begin{multicols}{2}
 		\tableofcontents
 		
 		\section{Semantic HTML}
@@ -201,7 +201,38 @@
 			\item\texttt{@media all and (max-width: 699px) and (min-width: 520px)} - executes when the display has a width of 520 to 699px
 		\end{itemize}
 		
-	\end{multicols*}
+		\section{Transitions}
+		\begin{description}
+			\item[transition:] <attribute> <duration>
+			\item[transition-delay:] delay before the effect starts (e.g. 2s)
+			\item[transition-duration:] duration of the transition
+			\item[transition-property:] attribute to transition on
+			\item[transition-timing-function:] possible values: ease, linear, ease-in, ease-out, ease-in-out, cubic-bezier(n, n, n, n)
+		\end{description}
+		
+		\subsection{Keyframes}
+		\begin{lstlisting}
+@keyframes mymove {
+	0% {
+		top: 0px;
+	}
+	100% {
+		top: 200px;
+	}
+}
+
+div {
+	animation: mymove 2s infinite;
+}
+		\end{lstlisting}
+		\begin{description}
+			\item[animation:] <name> <duration> <iteration>
+			\item[animation-direction:] (reverse | alternate | alternate-reverse)
+			\item[animation-fill-mode:] (none | forwards | backwards | both)
+		\end{description}
+		Iteration can be a number or infinite
+		
+	\end{multicols}
 		
 	\section{Code Snippets}
 
