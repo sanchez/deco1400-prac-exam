@@ -1,0 +1,11 @@
+*.aux
+*.synctex.gz
+*.toc
+*.log
+*.out
+*_latexmk
+*.fls
+*.tks
+*.txss
+*.md5
+*.auxlock
