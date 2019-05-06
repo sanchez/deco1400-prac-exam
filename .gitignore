@@ -9,3 +9,5 @@
 *.txss
 *.md5
 *.auxlock
+*.bbl
+*.blg
