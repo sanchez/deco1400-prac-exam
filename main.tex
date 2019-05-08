@@ -243,10 +243,39 @@ div {
 		\texttt{background-image: linear-gradient(-90deg, red, yellow);}\\
 		\texttt{background-image: radial-gradient(circle, red, yellow);}\\
 		
+		\section{Flexbox}
+		\subsection{Parent}
+		\texttt{display: flex;}
+		\begin{description}
+			\item[flex-direction:] row | row-reverse | column | column-reverse
+			\subitem\textit{Sets flexbox direction}
+			\item[flex-wrap:] nowrap | wrap | wrap-reverse
+			\subitem\textit{Sets if the flexbox will wrap or not}
+			\item[justify-content:] flex-start | flex-end | center | space-between | space-around | space-evenly
+			\subitem\textit{Aligns the items across the wrap axis}
+			\item[align-items:] flex-start | flex-end | center | stretch | baseline
+			\subitem\textit{Aligns the items across the \textbf{cross} wrap line}
+			\item[align-content:] flex-start | flex-end | center | stretch | space-between | space-around
+			\subitem\textit{Aligns all wrapped rows inside the parent}
+		\end{description}
+
+		\subsection{Client}
+		\begin{description}
+			\item[order:] <integer>
+			\subitem\textit{Position the individual flex item within the parent}
+			\item[flex-grow:] <number>
+			\subitem\textit{Specifies if the item should grow and the rate it should grow}
+			\item[flex-shrink:] <number>
+			\subitem\textit{Specifies if the item should shrink and the rate it will shrink}
+			\item[flex-basis:] <length> | auto
+			\subitem\textit{Specify the default item width}
+			\item[align-self:] auto | flex-start | flex-end | center | baseline | stretch
+			\subitem\textit{Overrides the parent \texttt{align-items} for the individual item}
+		\end{description}
+		
 	\end{multicols}
 		
 	\section{Code Snippets}
-
 	\subsection{Example Page Layout}
 	\begin{lstlisting}
 <!DOCTYPE html>
