@@ -211,7 +211,9 @@
 		\end{description}
 		
 		\subsection{Keyframes}
-		\begin{lstlisting}
+		\begin{center}
+			\begin{minipage}{0.9\linewidth}
+				\begin{lstlisting}
 @keyframes mymove {
 	0% {
 		top: 0px;
@@ -224,13 +226,22 @@
 div {
 	animation: mymove 2s infinite;
 }
-		\end{lstlisting}
+				\end{lstlisting}
+			\end{minipage}
+		\end{center}
 		\begin{description}
 			\item[animation:] <name> <duration> <iteration>
 			\item[animation-direction:] (reverse | alternate | alternate-reverse)
 			\item[animation-fill-mode:] (none | forwards | backwards | both)
 		\end{description}
 		Iteration can be a number or infinite
+		
+		\section{Gradients}
+		\texttt{linear-gradient(<position>, <color1>, <color2>)}\\
+		\texttt{radial-gradient(<color1>, <color2>)}\\
+		\subsection{Examples}
+		\texttt{background-image: linear-gradient(-90deg, red, yellow);}\\
+		\texttt{background-image: radial-gradient(circle, red, yellow);}\\
 		
 	\end{multicols}
 		
